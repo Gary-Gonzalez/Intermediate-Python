@@ -1,0 +1,10 @@
+def calc(x):
+    p = x*4
+    a = x**2
+    return p,a
+    
+side = int(input())
+p, a = calc(side)
+
+print("Perimeter: " + str(p))
+print("Area: " + str(a))

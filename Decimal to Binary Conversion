@@ -1,0 +1,9 @@
+def binaryConverter(decimalInteger, bitResolution):
+    binary = ""
+
+    n = 0
+    for n in range(bitResolution):
+        n = bitResolution - 1 - n
+        binary += str(decimalInteger // (2 ** n) % 2)
+
+    return binary
